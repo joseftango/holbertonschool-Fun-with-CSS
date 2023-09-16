@@ -1,0 +1,23 @@
+
+a {
+	text-decoration: none;
+    color: #cf1534;
+	transition: .5s;
+}
+
+a::after {
+    content: '';
+    width: 100%;
+    background-color: #cf1534;
+    cursor: pointer;
+    display: block;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+}
+
+
+a:hover::after{
+    transform: scaleX(0.13);
+}
